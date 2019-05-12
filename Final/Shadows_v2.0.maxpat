@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 50.0, 56.0, 1109.0, 715.0 ],
+		"rect" : [ 63.0, 56.0, 1117.0, 715.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 263.0, 118.0, 553.0, 561.0 ],
+						"rect" : [ 459.0, 162.0, 553.0, 561.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -90,7 +90,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 298.0, 51.0, 108.0, 47.0 ],
+									"patching_rect" : [ 298.0, 51.0, 110.0, 47.0 ],
 									"text" : "all black fullscreen no-border window as background"
 								}
 
@@ -579,8 +579,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -643,8 +643,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -712,7 +712,6 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"bgcolor" : [ 0.643137254901961, 0.63921568627451, 0.63921568627451, 1.0 ],
@@ -1910,8 +1909,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1974,8 +1973,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2476,8 +2475,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 1128.0, 616.42547607421875, 107.0, 22.0 ],
-					"text" : "jit.window Shadow"
+					"patching_rect" : [ 1128.0, 616.42547607421875, 171.0, 22.0 ],
+					"text" : "jit.window Shadow @floating 0"
 				}
 
 			}
@@ -2616,7 +2615,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1042.0, 96.0, 792.0, 742.0 ],
+						"rect" : [ 259.0, 75.0, 685.0, 750.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2857,7 +2856,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 172.496749877929688, 226.367279052734375, 484.00323486328125, 35.0 ],
+									"patching_rect" : [ 172.496749877929688, 226.367279052734375, 484.00323486328125, 22.0 ],
 									"text" : "\"Macintosh HD:/Users/user/Desktop/Interactive_Installation/final_/Final/\""
 								}
 
@@ -2988,7 +2987,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 320.163360595703125, 335.700653076171875, 101.0, 22.0 ],
+									"patching_rect" : [ 280.163360595703125, 392.659881591796875, 101.0, 22.0 ],
 									"text" : "print playShadow"
 								}
 
@@ -2997,11 +2996,12 @@
 								"box" : 								{
 									"fontsize" : 12.0,
 									"id" : "obj-201",
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 320.163360595703125, 309.040771484375, 558.0, 22.0 ],
+									"patching_rect" : [ 274.163360595703125, 305.040771484375, 382.33660888671875, 49.0 ],
 									"text" : "read \"Macintosh HD:/Users/user/Desktop/presentationMode/Interactive_Installation/final_/Final/b0.mov\""
 								}
 
@@ -3073,7 +3073,7 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"destination" : [ "obj-110", 0 ],
-									"midpoints" : [ 181.996749877929688, 328.850326538085938, 329.663360595703125, 328.850326538085938 ],
+									"midpoints" : [ 181.996749877929688, 368.850326538085938, 289.663360595703125, 368.850326538085938 ],
 									"order" : 1,
 									"source" : [ "obj-10", 0 ]
 								}
@@ -3090,7 +3090,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-201", 1 ],
-									"midpoints" : [ 181.996749877929688, 298.5203857421875, 868.663360595703125, 298.5203857421875 ],
+									"midpoints" : [ 181.996749877929688, 298.5203857421875, 646.999969482421875, 298.5203857421875 ],
 									"order" : 0,
 									"source" : [ "obj-10", 0 ]
 								}
@@ -3373,8 +3373,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3437,8 +3437,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3492,7 +3492,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 618.0, 132.0, 565.0, 691.0 ],
+						"rect" : [ 305.0, 83.0, 554.0, 614.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3551,18 +3551,6 @@
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 114.0, 188.0, 67.0, 22.0 ],
 									"text" : "delay 6000"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 443.00006103515625, 24.0, 169.0, 22.0 ],
-									"text" : "sprintf write b%i.mov 30. h264"
 								}
 
 							}
@@ -3923,8 +3911,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3987,8 +3975,8 @@
 , 							{
 								"name" : "texteditGold",
 								"default" : 								{
-									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+									"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4759,7 +4747,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "cv.jit.blobs.bounds.draw.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/cv.jit/patchers",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/cv.jit/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/cv.jit/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4807,8 +4795,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4871,8 +4859,8 @@
 , 			{
 				"name" : "texteditGold",
 				"default" : 				{
-					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 0.68 ],
+					"textcolor_inverse" : [ 0.0, 0.0, 0.0, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
