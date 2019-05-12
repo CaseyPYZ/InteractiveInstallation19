@@ -779,8 +779,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -885,7 +885,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 230.0, 98.0, 604.0, 665.0 ],
+						"rect" : [ 761.0, 160.0, 604.0, 665.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -912,6 +912,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontsize" : 10.0,
@@ -1401,7 +1402,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 256.0, 357.88983154296875, 77.0, 60.0 ],
+									"patching_rect" : [ 256.0, 357.88983154296875, 78.0, 60.0 ],
 									"text" : "always have up-to-date blob-size value",
 									"textcolor" : [ 0.180392161011696, 0.34901961684227, 0.325490206480026, 1.0 ]
 								}
@@ -2081,8 +2082,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2218,7 +2219,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 80.333335876464844, 345.3333740234375, 89.0, 60.0 ],
+					"patching_rect" : [ 81.333335876464844, 351.8333740234375, 89.0, 60.0 ],
 					"text" : "output2: depth map (post background subtraction)"
 				}
 
@@ -2265,7 +2266,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 709.0, 124.0, 512.0, 703.0 ],
+						"rect" : [ 525.0, 135.0, 425.0, 657.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2294,12 +2295,72 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-18",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 137.0, 321.5, 181.0, 47.0 ],
+									"presentation_linecount" : 8,
+									"text" : "use post-op depth map as a filter -> for pixels in video matrix, if within this range, then pass"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-17",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 290.5, 97.333343505859375, 33.0, 20.0 ],
+									"text" : "max"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 14.166664123535156, 97.333343505859375, 30.333335876464844, 20.0 ],
+									"text" : "min"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-7",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 79.0, 28.5, 72.0, 33.0 ],
+									"presentation_linecount" : 2,
+									"text" : "depth map matrix in"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"linecount" : 2,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 309.5, 28.5, 72.0, 33.0 ],
+									"text" : "video matrix in"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-5",
 									"linecount" : 2,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 292.0, 91.833343505859375, 82.0, 33.0 ],
+									"patching_rect" : [ 186.5, 57.833343505859375, 82.0, 33.0 ],
 									"text" : "set distance range: [0, 8]"
 								}
 
@@ -2396,7 +2457,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "jit_matrix" ],
-									"patching_rect" : [ 270.333343505859375, 30.0, 30.0, 30.0 ]
+									"patching_rect" : [ 277.5, 30.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -2534,7 +2595,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-12", 0 ],
-									"midpoints" : [ 279.833343505859375, 326.5, 59.833335876464844, 326.5 ],
+									"midpoints" : [ 287.0, 311.5, 59.833335876464844, 311.5 ],
 									"source" : [ "obj-8", 0 ]
 								}
 
@@ -2550,7 +2611,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-34", 0 ],
-									"midpoints" : [ 56.0, 78.166671752929688, 180.0, 78.166671752929688 ],
+									"midpoints" : [ 56.0, 85.166671752929688, 180.0, 85.166671752929688 ],
 									"order" : 0,
 									"source" : [ "obj-9", 0 ]
 								}
@@ -3613,8 +3674,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4158,8 +4219,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4566,7 +4627,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"midpoints" : [ 75.5, 488.675310611724854, 552.31878662109375, 488.675310611724854 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -4575,7 +4636,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"midpoints" : [ 75.5, 386.385476112365723, 75.5, 386.385476112365723 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-22", 0 ]
 				}
 
@@ -4594,6 +4655,15 @@
 					"destination" : [ "obj-36", 0 ],
 					"order" : 1,
 					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-65", 0 ],
+					"midpoints" : [ 75.5, 348.166717529296875, 516.909393310546875, 348.166717529296875, 516.909393310546875, 48.000011444091797, 552.31878662109375, 48.000011444091797 ],
+					"order" : 0,
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -4638,7 +4708,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 1 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -4655,7 +4725,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-29", 0 ],
 					"midpoints" : [ 164.0, 287.77081298828125, 215.1312255859375, 287.77081298828125 ],
-					"order" : 1,
+					"order" : 0,
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -4664,15 +4734,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
 					"source" : [ "obj-4", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-65", 0 ],
-					"midpoints" : [ 164.0, 287.333338379859924, 527.492739200592041, 287.333338379859924, 527.492739200592041, 54.425445556640625, 552.31878662109375, 54.425445556640625 ],
-					"order" : 0,
-					"source" : [ "obj-4", 1 ]
 				}
 
 			}
@@ -4831,7 +4892,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "cv.jit.blobs.bounds.draw.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/cv.jit/patchers",
-				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/cv.jit/patchers",
+				"patcherrelativepath" : "../../../Max 8/Packages/cv.jit/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -4879,8 +4940,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
